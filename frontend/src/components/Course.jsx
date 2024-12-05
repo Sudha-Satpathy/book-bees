@@ -7,7 +7,7 @@ const Course = () => {
   useEffect(()=>{
     const getBooks = async () =>{
       try {
-       const res = await axios.get("http://localhost:4001/books");
+       const res = await axios.get("https://book-bees.onrender.com/books");
        //console.log(res.data);
        setBooks(res.data)
       } catch (error) {
